@@ -1,0 +1,28 @@
+@import "./colors";
+
+html {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: $text;
+    background-color: $light;
+}
+
+// Gradient colors
+.bg-primary-gradient {
+    background: linear-gradient(118deg, rgba(115, 103, 240, 1), rgba(115, 103, 240, .7));
+}
+
+.table-header {
+    background-color: $light-primary !important;
+    text-transform: uppercase;
+}
+
+.search-filter {
+    padding: 7px 15px !important;
+}
+
+.title {
+    text-transform: capitalize;
+    font-size: theme('fontSize.xl');
+    font-weight: 500;
+}
