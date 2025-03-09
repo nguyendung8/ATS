@@ -9,6 +9,7 @@ use App\Repositories\Job\JobRepositoryInterface;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use function response;
 
 class JobController extends Controller
 {
@@ -110,5 +111,14 @@ class JobController extends Controller
         $this->authorize('delete', $job);
 
         return $job->delete();
+    }
+
+    public function getAppliedJobs(int $candidateId)
+    {
+        $jobs = $this->jobRepository->getAppliedJobs($candidateId);
+
+        return response()->json([
+            'data' => $jobs,
+        ]);
     }
 }

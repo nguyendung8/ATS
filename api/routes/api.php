@@ -75,6 +75,7 @@ Route::prefix('jobs')->group(function () {
     Route::get('/locations', GetAllLocationController::class);
     Route::get('/tags', GetAllTagController::class);
     Route::post('/{job}/candidates', CreateCandidateController::class);
+    Route::get('/{id}/applied', [JobController::class, 'getAppliedJobs']);
 });
 
 Route::prefix('resumes')->group(function () {

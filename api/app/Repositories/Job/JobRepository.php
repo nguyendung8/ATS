@@ -2,9 +2,11 @@
 
 namespace App\Repositories\Job;
 
+use App\Models\CandidateJob;
 use App\Models\Job;
 use App\Repositories\BaseRepository;
 use Illuminate\Support\Facades\DB;
+use function dd;
 
 class JobRepository extends BaseRepository implements JobRepositoryInterface
 {
@@ -64,5 +66,19 @@ class JobRepository extends BaseRepository implements JobRepositoryInterface
             ->orderBy('jobs_count', 'desc')
             ->take(10)
             ->get();
+    }
+
+    public function getAppliedJobs(int $candidateId)
+    {
+        $data = CandidateJob::query()->where('candidate_id', $candidateId)
+            ->with(['job', 'stage'])
+            ->get();
+
+        return $data->map(function ($item) {
+            return [
+                'job-info' => $item?->job->getAttributes() ?? [],
+                'stage' => $item?->stage?->name ?? '',
+            ];
+        });
     }
 }

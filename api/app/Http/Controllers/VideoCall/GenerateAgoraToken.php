@@ -17,9 +17,8 @@ class GenerateAgoraToken extends Controller
     public function __invoke(GenerateAgoraTokenRequest $request, Interview $interview)
     {
         $interviewers = $interview->interviewers->pluck('user_id')->toArray();
-        $canJoin = $interview->scheduler->user_id === Auth::id()
-            || in_array(Auth::id(), $interviewers, true);
-        abort_if(!$canJoin, 403, 'No permission to join this meeting');
+        $canJoin = in_array(Auth::id(), $interviewers, true);
+//        abort_if(!$canJoin, 403, 'No permission to join this meeting');
 
         try {
             $appId = env('AGORA_APP_ID');
