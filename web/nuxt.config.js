@@ -5,6 +5,17 @@ import auth from './config/auth';
 require('dotenv').config();
 
 export default {
+    watchers: {
+        webpack: {
+            ignored: [
+            '**/node_modules/*',
+            '**/.nuxt/*',
+            '**/logs/*',
+            '**/cache/*'
+            ]
+        }
+    },
+
     ssr: false,
 
     // Global page headers: https://go.nuxtjs.dev/config-head
@@ -51,9 +62,9 @@ export default {
                     { code: 'en', file: 'en.json' },
                     { code: 'vi', file: 'vi.json' },
                 ],
-                defaultLocale: 'en',
+                defaultLocale: 'vi',
                 vueI18n: {
-                    fallbackLocale: 'en',
+                    fallbackLocale: 'vi',
                 },
             },
         ],

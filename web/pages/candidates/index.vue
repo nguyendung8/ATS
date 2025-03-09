@@ -2,12 +2,12 @@
     <div>
         <div class="flex justify-between">
             <h1 class="title">{{ $t('candidate list') }}</h1>
-            <nuxt-link to="/candidates/create">
+            <!-- <nuxt-link to="/candidates/create">
                 <el-button type="primary" class="capitalize">
                     <span class="material-icons mr-1">add</span>
                     {{ $t('candidate') }}
                 </el-button>
-            </nuxt-link>
+            </nuxt-link> -->
         </div>
         <CandidateFilter />
         <CandidateList

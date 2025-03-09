@@ -52,6 +52,12 @@
                             {{ $t('manage CV') }}
                         </el-dropdown-item>
                     </nuxt-link>
+                    <nuxt-link to="/ats/history">
+                        <el-dropdown-item class="flex items-center">
+                            <span class="material-icons-outlined text-lg mr-1">history</span>
+                            {{ $t('applied history') }}
+                        </el-dropdown-item>
+                    </nuxt-link>
                     <el-dropdown-item class="flex items-center" @click.native="logout">
                         <span class="material-icons-outlined text-lg mr-1">logout</span>
                         {{ $t('sign out') }}
