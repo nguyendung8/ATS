@@ -12,10 +12,10 @@
         <div class="px-4 md:px-8">
             <h1 class="text-2xl font-bold my-6">{{ $t('your_application_history') }}</h1>
             <el-card
-                shadow="hover"
-                class="cursor-pointer mb-4"
                 v-for="job in jobs"
                 :key="job['job-info'].id"
+                shadow="hover"
+                class="cursor-pointer mb-4"
                 @click.native="$router.push(`/ats/jobs/${job['job-info'].id}`)"
             >
                 <div class="flex justify-start">
