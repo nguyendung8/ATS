@@ -16,27 +16,13 @@ class GetPublishedJobNameController extends Controller
         $name = $request->query('name');
 
         if ($name) {
-            $searchResult = Job::search(JobStatus::PUBLISHED, function($client, $body) use ($name) {
-                $fuzzyQuery = new FuzzyQuery(
-                    'name',
-                    $name,
-                    [
-                        'boost' => 1,
-                        'fuzziness' => 2,
-                        'prefix_length' => 0,
-                        'max_expansions' => 100,
-                    ]
-                );
-                $body->addQuery($fuzzyQuery);
-
-                return $client->search(['index' => 'jobs', 'body' => $body->toArray()]);
-            })->raw();
-
-            foreach ($searchResult['hits']['hits'] as $result) {
-                $jobNames[] = $result['_source']['name'];
-            }
+            $jobNames = Job::where('status', JobStatus::PUBLISHED)
+                ->where('name', 'LIKE', '%' . $name . '%')
+                ->pluck('name')
+                ->unique()
+                ->toArray();
         }
 
-        return response()->json(['data' => array_unique($jobNames)]);
+        return response()->json(['data' => $jobNames]);
     }
 }
