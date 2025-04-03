@@ -38,7 +38,7 @@
                         @input="(val) => onChangeValue('location', val)"
                     />
                 </el-form-item>
-                <el-form-item class="w-1/6 mx-5">
+                <!-- <el-form-item class="w-1/6 mx-5">
                     <el-select
                         v-model="tag"
                         size="small"
@@ -57,8 +57,8 @@
                             :value="$get(tag, 'name')"
                         />
                     </el-select>
-                </el-form-item>
-                <el-form-item class="w-1/6 mr-5">
+                </el-form-item> -->
+                <el-form-item class="w-1/6 mx-5">
                     <el-select
                         v-model="type"
                         size="small"

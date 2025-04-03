@@ -21,7 +21,7 @@
                 </div>
             </el-checkbox-group>
         </el-card>
-        <el-card shadow="hover" class="cursor-pointer my-5">
+        <!-- <el-card shadow="hover" class="cursor-pointer my-5">
             <div slot="header" class="text-center">
                 <span class="text-text text-lg capitalize">{{ $t('job tag') }}</span>
             </div>
@@ -41,7 +41,7 @@
                     <el-checkbox :label="$get(tag, 'name')" />
                 </div>
             </el-checkbox-group>
-        </el-card>
+        </el-card> -->
         <el-card shadow="hover" class="cursor-pointer my-5">
             <div slot="header" class="text-center">
                 <span class="text-text text-lg capitalize">{{ $t('employment type') }}</span>
