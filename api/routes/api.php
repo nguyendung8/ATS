@@ -60,6 +60,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::post('/users/register', [UserController::class, 'register']);
+
 Route::prefix('interviews')->group(function () {
     Route::get('{interviewHashId}', [InterviewController::class, 'show']);
 });
