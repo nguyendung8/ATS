@@ -15,6 +15,7 @@ use App\Http\Controllers\CandidateController;
 use App\Http\Controllers\CriterionController;
 use App\Http\Controllers\EducationController;
 use App\Http\Controllers\ExperienceController;
+use App\Http\Controllers\GenAIController;
 use App\Http\Controllers\Interview\SubmitAssessmentForm;
 use App\Http\Controllers\InterviewController;
 use App\Http\Controllers\Job\CreateCandidateController;
@@ -59,6 +60,8 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
+Route::post('/gen-ai/upload', [GenAIController::class, 'upload']);
 
 Route::prefix('interviews')->group(function () {
     Route::get('{interviewHashId}', [InterviewController::class, 'show']);

@@ -15,14 +15,14 @@
                     v-if="sidebarCollapsed"
                     src="@/assets/images/logo-icon.png"
                     alt="Logo"
-                    title="ATS"
+                    title="Atlantic Careers"
                     class="logo-icon"
                 >
                 <img
                     v-else
-                    src="@/assets/images/logo.png"
+                    src="@/assets/images/logo-2.png"
                     alt="Logo"
-                    title="ATS"
+                    title="Atlantic Careers"
                     class="logo"
                 >
             </nuxt-link>
@@ -132,7 +132,7 @@
     }
 
     .logo {
-        height: 95px;
+        height: 70px;
     }
 
     .logo-icon {

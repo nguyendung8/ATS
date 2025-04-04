@@ -18,7 +18,7 @@
     "sign in": "Đăng nhập",
     "Sorry, something went wrong": "Xin lỗi, có lỗi xảy ra.",
     "Update language successfully": "Cập nhật ngôn ngữ thành công.",
-    "welcome": "Chào mừng đến với hệ thống ATS!",
+    "welcome": "Chào mừng đến với hệ thống Atlantic Careers!",
     "sign in title": "Hãy đăng nhập và bắt đầu trải nghiệm",
     "email": "Email",
     "password": "Mật khẩu",
@@ -221,4 +221,5 @@
     "close": "Đóng",
     "last edit": "Chỉnh sửa lần cuối",
     "use this template": "Sử dụng mẫu này"
+  
 }

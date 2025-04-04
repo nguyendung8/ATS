@@ -3,13 +3,42 @@
         <div>
             <nuxt-link to="/ats">
                 <img
-                    src="@/assets/images/logo.png"
+                    src="@/assets/images/logo-2.png"
                     alt="Logo"
-                    title="ATS"
+                    title="Atlantic Careers"
                     class="logo"
                 >
             </nuxt-link>
         </div>
+
+        <!-- Thêm navigation menu ở giữa -->
+        <div class="flex items-center space-x-6">
+            <nuxt-link
+                to="/ats"
+                class="text-gray-700 hover:text-primary font-medium"
+            >
+                Trang chủ
+            </nuxt-link>
+            <nuxt-link
+                to="/ats/about"
+                class="text-gray-700 hover:text-primary font-medium"
+            >
+                Về chúng tôi
+            </nuxt-link>
+            <nuxt-link
+                to="/ats/cv"
+                class="text-gray-700 hover:text-primary font-medium"
+            >
+                Tạo CV
+            </nuxt-link>
+            <nuxt-link
+                to="/ats/jobs"
+                class="text-gray-700 hover:text-primary font-medium"
+            >
+                Tuyển dụng
+            </nuxt-link>
+        </div>
+
         <div class="flex items-center">
             <el-dropdown trigger="click" class="mr-3">
                 <div class="flex items-center">
@@ -96,6 +125,15 @@
 
 <style lang="scss" scoped>
     .logo {
-        height: 60px;
+        height: 40px;
+    }
+
+    .text-primary {
+        color: rgb(115 103 240);
+    }
+
+    // Thêm active class cho router-link-active
+    .router-link-active {
+        color: rgb(115 103 240);
     }
 </style>

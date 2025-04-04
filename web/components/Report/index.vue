@@ -15,7 +15,7 @@
                         workspace_premium
                     </span>
                     <p class="mb-3 text-white text-3xl font-semibold">{{ $t('hello') }} {{ $auth.user.name }},</p>
-                    <p class="text-white text-xl">{{ $t('welcome to') }} ATS System</p>
+                    <p class="text-white text-xl">{{ $t('welcome to') }} Atlantic Careers System</p>
                 </el-card>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 mb-base pr-4">
