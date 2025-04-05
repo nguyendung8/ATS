@@ -29,7 +29,7 @@
                         <p class="ml-3 text-gray-500 capitalize">{{ $get(job, 'employmentType') }}</p>
                     </div>
                 </div>
-                <div class="py-5 border-b">
+                <!-- <div class="py-5 border-b">
                     <p class="text-xl font-medium capitalize">{{ $t('job tag') }}</p>
                     <div>
                         <el-tag
@@ -41,7 +41,7 @@
                             {{ $get(tag, 'name') }}
                         </el-tag>
                     </div>
-                </div>
+                </div> -->
                 <div class="py-5">
                     <p class="text-xl font-medium capitalize">{{ $t('deadline') }}</p>
                     <div class="flex items-center">
