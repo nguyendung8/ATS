@@ -6,10 +6,6 @@
 
 <script>
     export default {
-        name: 'GuestLayout',
-
-        middleware: ['auth'],
-
-        auth: 'guest',
+        name: 'GuestLayout'
     };
 </script>

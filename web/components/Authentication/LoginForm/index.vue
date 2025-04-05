@@ -49,6 +49,14 @@
                 @click="loginWithFacebook"
             >
         </div>
+        <div class="text-center mt-4">
+            <span>
+                Bạn chưa có tài khoản,
+            </span>
+            <router-link to="/register" class="text-blue-500 hover:text-blue-700">
+                Đăng ký ngay?
+            </router-link>
+        </div>
     </div>
 </template>
 

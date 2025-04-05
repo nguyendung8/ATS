@@ -12,13 +12,8 @@ export default {
                 },
                 user: {
                     url: '/api/user',
-                },
-            },
-        },
-    },
-    redirect: {
-        login: '/login',
-        logout: '/login',
-        home: '/',
-    },
+                }
+            }
+        }
+    }
 };
