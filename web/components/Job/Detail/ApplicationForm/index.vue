@@ -11,24 +11,6 @@
                     :rules="rules"
                     label-position="top"
                 >
-                    <el-form-item :label="$t('name')" prop="name">
-                        <el-input
-                            v-model="form.name"
-                            :placeholder="$t('name')"
-                        />
-                    </el-form-item>
-                    <el-form-item :label="$t('email')" prop="email">
-                        <el-input
-                            v-model="form.email"
-                            :placeholder="$t('email')"
-                        />
-                    </el-form-item>
-                    <el-form-item :label="$t('phone number')" prop="phoneNumber">
-                        <el-input
-                            v-model="form.phoneNumber"
-                            :placeholder="$t('phone number')"
-                        />
-                    </el-form-item>
                     <el-form-item :label="$t('resume')" prop="resume">
                         <el-upload
                             ref="upload"

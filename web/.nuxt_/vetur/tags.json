@@ -1,0 +1,353 @@
+{
+  "CandidateFooter": {
+    "description": "Auto imported from components/CandidateFooter.vue"
+  },
+  "CandidateHeader": {
+    "description": "Auto imported from components/CandidateHeader.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "SideBar": {
+    "description": "Auto imported from components/SideBar.vue"
+  },
+  "CalendarFilter": {
+    "description": "Auto imported from components/Calendar/Filter.vue"
+  },
+  "Calendar": {
+    "description": "Auto imported from components/Calendar/index.vue"
+  },
+  "Assessment": {
+    "description": "Auto imported from components/Assessment/index.vue"
+  },
+  "AssessmentMixin": {
+    "description": "Auto imported from components/Assessment/mixin.js"
+  },
+  "ActionRejectCandidate": {
+    "description": "Auto imported from components/Action/RejectCandidate.vue"
+  },
+  "CandidateCard": {
+    "description": "Auto imported from components/Candidate/CandidateCard.vue"
+  },
+  "CandidateStar": {
+    "description": "Auto imported from components/Candidate/CandidateStar.vue"
+  },
+  "InterviewDetailModal": {
+    "description": "Auto imported from components/Interview/DetailModal.vue"
+  },
+  "Report": {
+    "description": "Auto imported from components/Report/index.vue"
+  },
+  "ReportInterviewStatistics": {
+    "description": "Auto imported from components/Report/InterviewStatistics.vue"
+  },
+  "ReportJobStatistics": {
+    "description": "Auto imported from components/Report/JobStatistics.vue"
+  },
+  "SharedCandidateStatus": {
+    "description": "Auto imported from components/Shared/CandidateStatus.vue"
+  },
+  "SharedJobStatus": {
+    "description": "Auto imported from components/Shared/JobStatus.vue"
+  },
+  "SharedJobType": {
+    "description": "Auto imported from components/Shared/JobType.vue"
+  },
+  "SharedPagination": {
+    "description": "Auto imported from components/Shared/Pagination.vue"
+  },
+  "SharedTextEditor": {
+    "description": "Auto imported from components/Shared/TextEditor.vue"
+  },
+  "StageDraggableList": {
+    "description": "Auto imported from components/Stage/DraggableList.vue"
+  },
+  "StageFormStageAction": {
+    "description": "Auto imported from components/Stage/FormStageAction.vue"
+  },
+  "VideoCall": {
+    "description": "Auto imported from components/VideoCall/index.vue"
+  },
+  "VideoCallInterviewInfo": {
+    "description": "Auto imported from components/VideoCall/InterviewInfo.vue"
+  },
+  "VideoCallMixin": {
+    "description": "Auto imported from components/VideoCall/mixin.js"
+  },
+  "AuthenticationLoginForm": {
+    "description": "Auto imported from components/Authentication/LoginForm/index.vue"
+  },
+  "AuthenticationLoginFormMixin": {
+    "description": "Auto imported from components/Authentication/LoginForm/mixin.js"
+  },
+  "AssessmentForm": {
+    "description": "Auto imported from components/Assessment/Form/index.vue"
+  },
+  "AssessmentFormMixin": {
+    "description": "Auto imported from components/Assessment/Form/mixin.js"
+  },
+  "AssessmentList": {
+    "description": "Auto imported from components/Assessment/List/index.vue"
+  },
+  "AssessmentListMixin": {
+    "description": "Auto imported from components/Assessment/List/mixin.js"
+  },
+  "CandidateList": {
+    "description": "Auto imported from components/Candidate/List/index.vue"
+  },
+  "CandidateEditProfileEducation": {
+    "description": "Auto imported from components/Candidate/EditProfile/Education.vue"
+  },
+  "CandidateEditProfileEducationForm": {
+    "description": "Auto imported from components/Candidate/EditProfile/EducationForm.vue"
+  },
+  "CandidateEditProfileExperience": {
+    "description": "Auto imported from components/Candidate/EditProfile/Experience.vue"
+  },
+  "CandidateEditProfileExperienceForm": {
+    "description": "Auto imported from components/Candidate/EditProfile/ExperienceForm.vue"
+  },
+  "CandidateEditProfile": {
+    "description": "Auto imported from components/Candidate/EditProfile/index.vue"
+  },
+  "CandidateEditProfilePersonalInfo": {
+    "description": "Auto imported from components/Candidate/EditProfile/PersonalInfo.vue"
+  },
+  "CandidateUploadAvatar": {
+    "description": "Auto imported from components/Candidate/UploadAvatar/index.vue"
+  },
+  "CriterionForm": {
+    "description": "Auto imported from components/Criterion/Form/index.vue"
+  },
+  "CriterionFormMixin": {
+    "description": "Auto imported from components/Criterion/Form/mixin.js"
+  },
+  "CVBuilderEditorConfig": {
+    "description": "Auto imported from components/CV/Builder/editorConfig.js"
+  },
+  "CVBuilder": {
+    "description": "Auto imported from components/CV/Builder/index.vue"
+  },
+  "CVBuilderMixin": {
+    "description": "Auto imported from components/CV/Builder/mixin.js"
+  },
+  "CVBuilderOutline": {
+    "description": "Auto imported from components/CV/Builder/Outline.vue"
+  },
+  "CVList": {
+    "description": "Auto imported from components/CV/List/index.vue"
+  },
+  "InterviewCreateForm": {
+    "description": "Auto imported from components/Interview/CreateForm/index.vue"
+  },
+  "InterviewCreateFormMixin": {
+    "description": "Auto imported from components/Interview/CreateForm/mixin.js"
+  },
+  "InterviewCreateFormSendMailForm": {
+    "description": "Auto imported from components/Interview/CreateForm/SendMailForm.vue"
+  },
+  "InterviewDetailAllAssessments": {
+    "description": "Auto imported from components/Interview/Detail/AllAssessments.vue"
+  },
+  "InterviewDetail": {
+    "description": "Auto imported from components/Interview/Detail/index.vue"
+  },
+  "InterviewInfo": {
+    "description": "Auto imported from components/Interview/Detail/InterviewInfo.vue"
+  },
+  "InterviewTabs": {
+    "description": "Auto imported from components/Interview/Detail/InterviewTabs.vue"
+  },
+  "InterviewInterviewForm": {
+    "description": "Auto imported from components/Interview/InterviewForm/index.vue"
+  },
+  "InterviewInterviewFormMixin": {
+    "description": "Auto imported from components/Interview/InterviewForm/mixin.js"
+  },
+  "JobCreateForm": {
+    "description": "Auto imported from components/Job/CreateForm/index.vue"
+  },
+  "JobCreateFormMixin": {
+    "description": "Auto imported from components/Job/CreateForm/mixin.js"
+  },
+  "JobCreateFormNextButton": {
+    "description": "Auto imported from components/Job/CreateForm/NextButton.vue"
+  },
+  "JobCreateFormPrevButton": {
+    "description": "Auto imported from components/Job/CreateForm/PrevButton.vue"
+  },
+  "JobCreateFormStep": {
+    "description": "Auto imported from components/Job/CreateForm/Step.vue"
+  },
+  "JobDetailBasicInformation": {
+    "description": "Auto imported from components/Job/Detail/BasicInformation.vue"
+  },
+  "JobDetail": {
+    "description": "Auto imported from components/Job/Detail/index.vue"
+  },
+  "JobDetailOverview": {
+    "description": "Auto imported from components/Job/Detail/Overview.vue"
+  },
+  "JobEditForm": {
+    "description": "Auto imported from components/Job/EditForm/index.vue"
+  },
+  "JobEditFormMixin": {
+    "description": "Auto imported from components/Job/EditForm/mixin.js"
+  },
+  "JobEditFormSaveAsButton": {
+    "description": "Auto imported from components/Job/EditForm/SaveAsButton.vue"
+  },
+  "JobLanding": {
+    "description": "Auto imported from components/Job/Landing/index.vue"
+  },
+  "JobCard": {
+    "description": "Auto imported from components/Job/Landing/JobCard.vue"
+  },
+  "JobLandingMixin": {
+    "description": "Auto imported from components/Job/Landing/mixin.js"
+  },
+  "JobList": {
+    "description": "Auto imported from components/Job/List/index.vue"
+  },
+  "JobListMixin": {
+    "description": "Auto imported from components/Job/List/mixin.js"
+  },
+  "JobPipelineStage": {
+    "description": "Auto imported from components/Job/PipelineStage/index.vue"
+  },
+  "PermissionList": {
+    "description": "Auto imported from components/Permission/List/index.vue"
+  },
+  "PermissionListMixin": {
+    "description": "Auto imported from components/Permission/List/mixin.js"
+  },
+  "PermissionListRolesTab": {
+    "description": "Auto imported from components/Permission/List/RolesTab.vue"
+  },
+  "PermissionListUsersTab": {
+    "description": "Auto imported from components/Permission/List/UsersTab.vue"
+  },
+  "PipelineForm": {
+    "description": "Auto imported from components/Pipeline/Form/index.vue"
+  },
+  "PipelineFormMixin": {
+    "description": "Auto imported from components/Pipeline/Form/mixin.js"
+  },
+  "PipelineListJobSelect": {
+    "description": "Auto imported from components/Pipeline/List/JobSelect.vue"
+  },
+  "PipelineSelect": {
+    "description": "Auto imported from components/Pipeline/List/PipelineSelect.vue"
+  },
+  "PipelineSetting": {
+    "description": "Auto imported from components/Pipeline/List/PipelineSetting.vue"
+  },
+  "RejectionForm": {
+    "description": "Auto imported from components/Rejection/Form/index.vue"
+  },
+  "RejectionFormMixin": {
+    "description": "Auto imported from components/Rejection/Form/mixin.js"
+  },
+  "StageCreateForm": {
+    "description": "Auto imported from components/Stage/CreateForm/index.vue"
+  },
+  "StageCreateFormMixin": {
+    "description": "Auto imported from components/Stage/CreateForm/mixin.js"
+  },
+  "StageKanban": {
+    "description": "Auto imported from components/Stage/Kanban/index.vue"
+  },
+  "StageKanbanMixin": {
+    "description": "Auto imported from components/Stage/Kanban/mixin.js"
+  },
+  "StageList": {
+    "description": "Auto imported from components/Stage/List/index.vue"
+  },
+  "CandidateDetailCardDetail": {
+    "description": "Auto imported from components/Candidate/Detail/CardDetail/index.vue"
+  },
+  "CandidateDetailCardSummary": {
+    "description": "Auto imported from components/Candidate/Detail/CardSummary/index.vue"
+  },
+  "CandidateDetailCvEmbed": {
+    "description": "Auto imported from components/Candidate/Detail/CvEmbed/index.vue"
+  },
+  "CandidateListFilter": {
+    "description": "Auto imported from components/Candidate/List/Filter/index.vue"
+  },
+  "CandidateListFilterMixin": {
+    "description": "Auto imported from components/Candidate/List/Filter/mixin.js"
+  },
+  "CVTemplateTemplate2Certification": {
+    "description": "Auto imported from components/CV/Template/Template2/Certification.vue"
+  },
+  "CVTemplateTemplate2Description": {
+    "description": "Auto imported from components/CV/Template/Template2/Description.vue"
+  },
+  "CVTemplateTemplate2Education": {
+    "description": "Auto imported from components/CV/Template/Template2/Education.vue"
+  },
+  "CVTemplateTemplate2Experience": {
+    "description": "Auto imported from components/CV/Template/Template2/Experience.vue"
+  },
+  "CVTemplateTemplate2": {
+    "description": "Auto imported from components/CV/Template/Template2/index.vue"
+  },
+  "CVTemplateTemplate1Certification": {
+    "description": "Auto imported from components/CV/Template/Template1/Certification.vue"
+  },
+  "CVTemplateTemplate1Description": {
+    "description": "Auto imported from components/CV/Template/Template1/Description.vue"
+  },
+  "CVTemplateTemplate1Education": {
+    "description": "Auto imported from components/CV/Template/Template1/Education.vue"
+  },
+  "CVTemplateTemplate1Experience": {
+    "description": "Auto imported from components/CV/Template/Template1/Experience.vue"
+  },
+  "CVTemplateTemplate1": {
+    "description": "Auto imported from components/CV/Template/Template1/index.vue"
+  },
+  "JobDetailApplicationForm": {
+    "description": "Auto imported from components/Job/Detail/ApplicationForm/index.vue"
+  },
+  "JobDetailApplicationFormMixin": {
+    "description": "Auto imported from components/Job/Detail/ApplicationForm/mixin.js"
+  },
+  "JobLandingFilter": {
+    "description": "Auto imported from components/Job/Landing/Filter/index.vue"
+  },
+  "JobLandingFilterMixin": {
+    "description": "Auto imported from components/Job/Landing/Filter/mixin.js"
+  },
+  "JobListFilter": {
+    "description": "Auto imported from components/Job/List/Filter/index.vue"
+  },
+  "JobListFilterMixin": {
+    "description": "Auto imported from components/Job/List/Filter/mixin.js"
+  },
+  "PipelineListFilter": {
+    "description": "Auto imported from components/Pipeline/List/Filter/index.vue"
+  },
+  "PipelineListFilterMixin": {
+    "description": "Auto imported from components/Pipeline/List/Filter/mixin.js"
+  },
+  "CandidateDetailCardDetailBasicInfo": {
+    "description": "Auto imported from components/Candidate/Detail/CardDetail/BasicInfo/index.vue"
+  },
+  "CandidateDetailCardDetailBasicInfoMixin": {
+    "description": "Auto imported from components/Candidate/Detail/CardDetail/BasicInfo/mixin.js"
+  },
+  "CandidateDetailCardDetailEducationForm": {
+    "description": "Auto imported from components/Candidate/Detail/CardDetail/Education/EducationForm.vue"
+  },
+  "CandidateDetailCardDetailEducation": {
+    "description": "Auto imported from components/Candidate/Detail/CardDetail/Education/index.vue"
+  },
+  "CandidateDetailCardDetailExperienceForm": {
+    "description": "Auto imported from components/Candidate/Detail/CardDetail/Experience/ExperienceForm.vue"
+  },
+  "CandidateDetailCardDetailExperience": {
+    "description": "Auto imported from components/Candidate/Detail/CardDetail/Experience/index.vue"
+  }
+}

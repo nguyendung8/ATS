@@ -100,7 +100,6 @@
     }
 
     .px-4 {
-        padding-left: 1rem;
         padding-right: 1rem;
     }
 

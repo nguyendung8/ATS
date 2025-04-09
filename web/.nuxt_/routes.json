@@ -1,0 +1,326 @@
+[
+  {
+    "name": "assessment-forms___vi",
+    "path": "/assessment-forms",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\assessment-forms\\\\index.vue",
+    "chunkName": "pages/assessment-forms/index"
+  },
+  {
+    "name": "ats___vi",
+    "path": "/ats",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\ats\\\\index.vue",
+    "chunkName": "pages/ats/index"
+  },
+  {
+    "name": "calendar___vi",
+    "path": "/calendar",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\calendar\\\\index.vue",
+    "chunkName": "pages/calendar/index"
+  },
+  {
+    "name": "candidates___vi",
+    "path": "/candidates",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\candidates\\\\index.vue",
+    "chunkName": "pages/candidates/index"
+  },
+  {
+    "name": "index___en",
+    "path": "/en",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  },
+  {
+    "name": "jobs___vi",
+    "path": "/jobs",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\jobs\\\\index.vue",
+    "chunkName": "pages/jobs/index"
+  },
+  {
+    "name": "login___vi",
+    "path": "/login",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\login.vue",
+    "chunkName": "pages/login"
+  },
+  {
+    "name": "permissions___vi",
+    "path": "/permissions",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\permissions\\\\index.vue",
+    "chunkName": "pages/permissions/index"
+  },
+  {
+    "name": "pipelines___vi",
+    "path": "/pipelines",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\pipelines\\\\index.vue",
+    "chunkName": "pages/pipelines/index"
+  },
+  {
+    "name": "stages___vi",
+    "path": "/stages",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\stages\\\\index.vue",
+    "chunkName": "pages/stages/index"
+  },
+  {
+    "name": "assessment-forms-create___vi",
+    "path": "/assessment-forms/create",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\assessment-forms\\\\create.vue",
+    "chunkName": "pages/assessment-forms/create"
+  },
+  {
+    "name": "ats-about___vi",
+    "path": "/ats/about",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\ats\\\\about\\\\index.vue",
+    "chunkName": "pages/ats/about/index"
+  },
+  {
+    "name": "ats-cv___vi",
+    "path": "/ats/cv",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\ats\\\\cv\\\\index.vue",
+    "chunkName": "pages/ats/cv/index"
+  },
+  {
+    "name": "ats-history___vi",
+    "path": "/ats/history",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\ats\\\\history\\\\index.vue",
+    "chunkName": "pages/ats/history/index"
+  },
+  {
+    "name": "ats-jobs___vi",
+    "path": "/ats/jobs",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\ats\\\\jobs\\\\index.vue",
+    "chunkName": "pages/ats/jobs/index"
+  },
+  {
+    "name": "auth-callback___vi",
+    "path": "/auth/callback",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\auth\\\\callback.vue",
+    "chunkName": "pages/auth/callback"
+  },
+  {
+    "name": "assessment-forms___en",
+    "path": "/en/assessment-forms",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\assessment-forms\\\\index.vue",
+    "chunkName": "pages/assessment-forms/index"
+  },
+  {
+    "name": "ats___en",
+    "path": "/en/ats",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\ats\\\\index.vue",
+    "chunkName": "pages/ats/index"
+  },
+  {
+    "name": "calendar___en",
+    "path": "/en/calendar",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\calendar\\\\index.vue",
+    "chunkName": "pages/calendar/index"
+  },
+  {
+    "name": "candidates___en",
+    "path": "/en/candidates",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\candidates\\\\index.vue",
+    "chunkName": "pages/candidates/index"
+  },
+  {
+    "name": "jobs___en",
+    "path": "/en/jobs",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\jobs\\\\index.vue",
+    "chunkName": "pages/jobs/index"
+  },
+  {
+    "name": "login___en",
+    "path": "/en/login",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\login.vue",
+    "chunkName": "pages/login"
+  },
+  {
+    "name": "permissions___en",
+    "path": "/en/permissions",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\permissions\\\\index.vue",
+    "chunkName": "pages/permissions/index"
+  },
+  {
+    "name": "pipelines___en",
+    "path": "/en/pipelines",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\pipelines\\\\index.vue",
+    "chunkName": "pages/pipelines/index"
+  },
+  {
+    "name": "stages___en",
+    "path": "/en/stages",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\stages\\\\index.vue",
+    "chunkName": "pages/stages/index"
+  },
+  {
+    "name": "jobs-create___vi",
+    "path": "/jobs/create",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\jobs\\\\create.vue",
+    "chunkName": "pages/jobs/create"
+  },
+  {
+    "name": "pipelines-create___vi",
+    "path": "/pipelines/create",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\pipelines\\\\create.vue",
+    "chunkName": "pages/pipelines/create"
+  },
+  {
+    "name": "ats-my-profile-edit___vi",
+    "path": "/ats/my-profile/edit",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\ats\\\\my-profile\\\\edit.vue",
+    "chunkName": "pages/ats/my-profile/edit"
+  },
+  {
+    "name": "assessment-forms-create___en",
+    "path": "/en/assessment-forms/create",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\assessment-forms\\\\create.vue",
+    "chunkName": "pages/assessment-forms/create"
+  },
+  {
+    "name": "ats-about___en",
+    "path": "/en/ats/about",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\ats\\\\about\\\\index.vue",
+    "chunkName": "pages/ats/about/index"
+  },
+  {
+    "name": "ats-cv___en",
+    "path": "/en/ats/cv",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\ats\\\\cv\\\\index.vue",
+    "chunkName": "pages/ats/cv/index"
+  },
+  {
+    "name": "ats-history___en",
+    "path": "/en/ats/history",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\ats\\\\history\\\\index.vue",
+    "chunkName": "pages/ats/history/index"
+  },
+  {
+    "name": "ats-jobs___en",
+    "path": "/en/ats/jobs",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\ats\\\\jobs\\\\index.vue",
+    "chunkName": "pages/ats/jobs/index"
+  },
+  {
+    "name": "auth-callback___en",
+    "path": "/en/auth/callback",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\auth\\\\callback.vue",
+    "chunkName": "pages/auth/callback"
+  },
+  {
+    "name": "jobs-create___en",
+    "path": "/en/jobs/create",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\jobs\\\\create.vue",
+    "chunkName": "pages/jobs/create"
+  },
+  {
+    "name": "pipelines-create___en",
+    "path": "/en/pipelines/create",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\pipelines\\\\create.vue",
+    "chunkName": "pages/pipelines/create"
+  },
+  {
+    "name": "ats-my-profile-edit___en",
+    "path": "/en/ats/my-profile/edit",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\ats\\\\my-profile\\\\edit.vue",
+    "chunkName": "pages/ats/my-profile/edit"
+  },
+  {
+    "name": "ats-jobs-id___en",
+    "path": "/en/ats/jobs/:id",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\ats\\\\jobs\\\\_id.vue",
+    "chunkName": "pages/ats/jobs/_id"
+  },
+  {
+    "name": "ats-cv-id-edit___en",
+    "path": "/en/ats/cv/:id/edit",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\ats\\\\cv\\\\_id\\\\edit.vue",
+    "chunkName": "pages/ats/cv/_id/edit"
+  },
+  {
+    "name": "ats-jobs-id___vi",
+    "path": "/ats/jobs/:id",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\ats\\\\jobs\\\\_id.vue",
+    "chunkName": "pages/ats/jobs/_id"
+  },
+  {
+    "name": "candidates-id___en",
+    "path": "/en/candidates/:id",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\candidates\\\\_id\\\\index.vue",
+    "chunkName": "pages/candidates/_id/index"
+  },
+  {
+    "name": "interviews-id___en",
+    "path": "/en/interviews/:id",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\interviews\\\\_id\\\\index.vue",
+    "chunkName": "pages/interviews/_id/index"
+  },
+  {
+    "name": "meeting-id___en",
+    "path": "/en/meeting/:id",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\meeting\\\\_id\\\\index.vue",
+    "chunkName": "pages/meeting/_id/index"
+  },
+  {
+    "name": "ats-cv-id-edit___vi",
+    "path": "/ats/cv/:id/edit",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\ats\\\\cv\\\\_id\\\\edit.vue",
+    "chunkName": "pages/ats/cv/_id/edit"
+  },
+  {
+    "name": "assessment-forms-id-edit___en",
+    "path": "/en/assessment-forms/:id?/edit",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\assessment-forms\\\\_id\\\\edit.vue",
+    "chunkName": "pages/assessment-forms/_id/edit"
+  },
+  {
+    "name": "jobs-id-edit___en",
+    "path": "/en/jobs/:id/edit",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\jobs\\\\_id\\\\edit.vue",
+    "chunkName": "pages/jobs/_id/edit"
+  },
+  {
+    "name": "pipelines-id-edit___en",
+    "path": "/en/pipelines/:id/edit",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\pipelines\\\\_id\\\\edit.vue",
+    "chunkName": "pages/pipelines/_id/edit"
+  },
+  {
+    "name": "candidates-id___vi",
+    "path": "/candidates/:id",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\candidates\\\\_id\\\\index.vue",
+    "chunkName": "pages/candidates/_id/index"
+  },
+  {
+    "name": "interviews-id___vi",
+    "path": "/interviews/:id",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\interviews\\\\_id\\\\index.vue",
+    "chunkName": "pages/interviews/_id/index"
+  },
+  {
+    "name": "meeting-id___vi",
+    "path": "/meeting/:id",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\meeting\\\\_id\\\\index.vue",
+    "chunkName": "pages/meeting/_id/index"
+  },
+  {
+    "name": "assessment-forms-id-edit___vi",
+    "path": "/assessment-forms/:id?/edit",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\assessment-forms\\\\_id\\\\edit.vue",
+    "chunkName": "pages/assessment-forms/_id/edit"
+  },
+  {
+    "name": "jobs-id-edit___vi",
+    "path": "/jobs/:id/edit",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\jobs\\\\_id\\\\edit.vue",
+    "chunkName": "pages/jobs/_id/edit"
+  },
+  {
+    "name": "pipelines-id-edit___vi",
+    "path": "/pipelines/:id/edit",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\pipelines\\\\_id\\\\edit.vue",
+    "chunkName": "pages/pipelines/_id/edit"
+  },
+  {
+    "name": "index___vi",
+    "path": "/",
+    "component": "C:\\\\xampp\\\\htdocs\\\\min\\\\ATS\\\\ATS\\\\web\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  }
+]
