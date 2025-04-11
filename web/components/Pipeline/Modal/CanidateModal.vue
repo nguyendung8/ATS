@@ -83,10 +83,17 @@ export default {
                         await this.$axios.$post(`jobs/${this.jobId}/admin/candidates`, formData);
 
                         this.visible = false;
+                        this.$emit('candidate-added');
+                        
+                        this.form = {
+                            name: '',
+                            email: '',
+                            phoneNumber: '',
+                            resume: null,
+                        };
+                        this.fileList = [];
                     } catch (error) {
                         this.$handleError(error);
-                    } finally {
-                        window.location.reload();
                     }
                 }
             });

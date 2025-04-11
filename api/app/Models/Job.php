@@ -38,7 +38,8 @@ class Job extends Model
 
     public function candidates()
     {
-        return $this->belongsToMany(Candidate::class, 'candidate_jobs');
+        return $this->belongsToMany(Candidate::class, 'candidate_jobs')
+            ->wherePivot('is_active', true);
     }
 
     public function tags()

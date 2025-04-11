@@ -48,7 +48,7 @@
             :assessment-forms="assessmentForms"
             :submit-form="createInterviewSchedule"
         />
-        <CandidateModal ref="candidateModal" :job-id="jobId" />
+        <CandidateModal ref="candidateModal" :job-id="jobId" @candidate-added="refreshData" />
     </div>
 </template>
 
@@ -75,6 +75,14 @@
             openCandidateModal() {
                 this.$refs.candidateModal.visible = true;
             },
+            
+            refreshData() {
+                // Reset data và tải lại
+                this.candidates = [];
+                this.page = 1;
+                this.fetch();
+                this.page += 1;
+            }
         },
     };
 </script>

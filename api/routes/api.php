@@ -96,6 +96,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::prefix('stages')->group(function () {
         Route::get('/{stage}/pipelines/{pipeline}/jobs/{jobId}/candidates', GetCandidatesByStageAndJobController::class);
+        Route::post('/{stage}/jobs/{job}/add-candidate', \App\Http\Controllers\Stage\AddCandidateToStageController::class);
     });
 
     Route::prefix('mail-templates')->group(function () {
