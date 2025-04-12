@@ -1,16 +1,16 @@
 <template>
-    <el-dialog :visible.sync="visible" title="Add Candidate">
+    <el-dialog :visible.sync="visible" :title="$t('add candidate')">
         <el-form ref="form" :model="form" :rules="rules" label-position="top">
-            <el-form-item label="Name" prop="name">
+            <el-form-item :label="$t('name')" prop="name">
                 <el-input v-model="form.name"></el-input>
             </el-form-item>
-            <el-form-item label="Email" prop="email">
+            <el-form-item :label="$t('email')" prop="email">
                 <el-input v-model="form.email"></el-input>
             </el-form-item>
-            <el-form-item label="Phone Number" prop="phoneNumber">
+            <el-form-item :label="$t('phone number')" prop="phoneNumber">
                 <el-input v-model="form.phoneNumber"></el-input>
             </el-form-item>
-            <el-form-item label="Resume" prop="resume">
+            <el-form-item :label="$t('resume')" prop="resume">
                 <el-upload
                     ref="upload"
                     drag
@@ -24,14 +24,14 @@
                 >
                     <i class="el-icon-upload" />
                     <div class="el-upload__text">
-                        Drop file here or <em>click to upload</em>
+                        {{ $t('drop file here or') }} <em>{{ $t('click to upload') }}</em>
                     </div>
                 </el-upload>
             </el-form-item>
         </el-form>
         <span slot="footer" class="dialog-footer">
-            <el-button @click="visible = false">Cancel</el-button>
-            <el-button type="primary" @click="submit($refs.form)">Submit</el-button>
+            <el-button @click="visible = false">{{ $t('cancel') }}</el-button>
+            <el-button type="primary" @click="submit($refs.form)">{{ $t('submit') }}</el-button>
         </span>
     </el-dialog>
 </template>
@@ -49,10 +49,10 @@ export default {
             },
             fileList: [],
             rules: {
-                name: [{ required: true, message: 'Please input name', trigger: 'blur' }],
-                email: [{ required: true, message: 'Please input email', trigger: 'blur' }],
-                phoneNumber: [{ required: true, message: 'Please input phone number', trigger: 'blur' }],
-                resume: [{ required: true, message: 'Please upload resume', trigger: 'change' }],
+                name: [{ required: true, message: this.$t('validation.required', { field: this.$t('name') }), trigger: 'blur' }],
+                email: [{ required: true, message: this.$t('validation.required', { field: this.$t('email') }), trigger: 'blur' }],
+                phoneNumber: [{ required: true, message: this.$t('validation.required', { field: this.$t('phone number') }), trigger: 'blur' }],
+                resume: [{ required: true, message: this.$t('validation.required', { field: this.$t('resume') }), trigger: 'change' }],
             },
         };
     },
@@ -85,6 +85,11 @@ export default {
                         this.visible = false;
                         this.$emit('candidate-added');
                         
+                        this.$message({
+                            type: 'success',
+                            message: this.$t('add candidate successfully')
+                        });
+                        
                         this.form = {
                             name: '',
                             email: '',
@@ -101,3 +106,9 @@ export default {
     },
 };
 </script>
+
+<style scoped>
+.el-select {
+    width: 100%;
+}
+</style>

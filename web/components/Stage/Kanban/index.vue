@@ -37,6 +37,7 @@
                     :open-interview-form="openInterviewForm"
                     :star-candidate="starCandidate"
                     :job-id="jobId"
+                    @candidate-deleted="onCandidateDeleted"
                 />
             </div>
         </draggable>
@@ -82,6 +83,13 @@
                 this.page = 1;
                 this.fetch();
                 this.page += 1;
+            },
+            
+            onCandidateDeleted(candidateId) {
+                // Xóa ứng viên khỏi danh sách hiện tại
+                this.candidates = this.candidates.filter(candidate => candidate.id !== candidateId);
+                // Cập nhật số lượng
+                this.total -= 1;
             }
         },
     };

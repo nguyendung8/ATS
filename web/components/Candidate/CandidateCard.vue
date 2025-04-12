@@ -120,12 +120,11 @@
                     await this.$axios.$delete(`/jobs/${this.jobId}/candidates/${candidateId}`);
                     this.$message({
                         type: 'success',
-                        message: 'Xóa ứng viên thành công',
+                        message: this.$t('delete candidate successfully'),
                     });
+                    this.$emit('candidate-deleted', candidateId);
                 } catch (error) {
                     this.$handleError(error);
-                } finally {
-                    window.location.reload();
                 }
             },
         },

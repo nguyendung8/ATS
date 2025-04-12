@@ -10,6 +10,7 @@
             <InterviewInfo :interview="interview" />
             <div class="my-5">
                 <el-button
+                    v-if="$get(interview, 'status') !== 'canceled'"
                     type="primary"
                     @click="openInterviewForm(interview)"
                 >
@@ -17,7 +18,8 @@
                     {{ $t('edit interview') }}
                 </el-button>
                 <el-button
-                    @click="handleDeleteInterview($get(interview, 'id'))"
+                    v-if="$get(interview, 'status') !== 'canceled'"
+                    @click="handleCancelInterview($get(interview, 'id'))"
                 >
                     <span class="material-icons-outlined mr-2">event_busy</span>
                     {{ $t('cancel schedule') }}
@@ -59,14 +61,14 @@
                 this.show = true;
                 this.interview = interview;
             },
-            async handleDeleteInterview(interviewId) {
+            async handleCancelInterview(interviewId) {
                 try {
-                    this.$confirm(this.$t('do you want to delete?'), this.$t('delete interview schedule'), {
+                    this.$confirm(this.$t('do you want to delete?'), this.$t('cancel schedule'), {
                         confirmButtonText: this.$t('confirm'),
                         cancelButtonText: this.$t('cancel'),
                         type: 'warning',
                     }).then(async () => {
-                        await this.$axios.$delete(`interviews/${interviewId}`);
+                        const { data: updatedInterview } = await this.$axios.$put(`interviews/${interviewId}/cancel`);
                         this.show = false;
                         this.deleteInterview(interviewId);
                         this.$message.success(this.$t('delete successfully'));

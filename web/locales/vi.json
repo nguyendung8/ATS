@@ -221,5 +221,7 @@
     "close": "Đóng",
     "last edit": "Chỉnh sửa lần cuối",
     "use this template": "Sử dụng mẫu này",
-    "interviews scheduled": "Lịch phỏng vấn"
+    "interviews scheduled": "Lịch phỏng vấn",
+    "delete candidate successfully": "Đã xóa ứng viên thành công",
+    "add candidate successfully": "Đã thêm ứng viên thành công"
 }

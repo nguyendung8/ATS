@@ -91,7 +91,17 @@
                 this.interviews = interviews;
             },
             deleteInterview(interviewId) {
-                this.interviews = this.interviews.filter((item) => item.id !== interviewId);
+                // First try to find the interview in our list
+                const index = _findIndex(this.interviews, ['id', interviewId]);
+                
+                // If we don't have the interview in our current view (or it was truly deleted), remove it
+                if (index === -1) {
+                    this.interviews = this.interviews.filter((item) => item.id !== interviewId);
+                    return;
+                }
+                
+                // Refresh the data to get updated interview status
+                this.searchInterviews(this.$route.query);
             },
         },
     };

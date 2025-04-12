@@ -119,7 +119,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::prefix('interviews')->group(function () {
         Route::post('{interview}/submit-assessment-form', SubmitAssessmentForm::class);
-//        Route::get('{interviewHashId}', [InterviewController::class, 'show']);
+        Route::put('{interview}/cancel', [InterviewController::class, 'cancelInterview']);
     });
 
     Route::prefix('permissions')->group(function () {
