@@ -135,7 +135,7 @@
     "company name": "Tên công ty",
     "summary": "Tóm tắt",
     "position": "Vị trí",
-    "manage profile": "Quẩn lý hồ sơ",
+    "manage profile": "Quản lý hồ sơ",
     "manage CV": "Quản lý CV",
     "applied history": "Lịch sử ứng tuyển",
     "your_application_history": "Lịch sử ứng tuyển của bạn",
@@ -221,5 +221,7 @@
     "close": "Đóng",
     "last edit": "Chỉnh sửa lần cuối",
     "use this template": "Sử dụng mẫu này",
-    "interviews scheduled": "Lịch phỏng vấn"
+    "interviews scheduled": "Lịch phỏng vấn",
+    "delete candidate successfully": "Đã xóa ứng viên thành công",
+    "add candidate successfully": "Đã thêm ứng viên thành công"
 }

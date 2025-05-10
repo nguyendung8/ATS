@@ -56,7 +56,7 @@
                     <template slot-scope="{ row }">
                         <span
                             class="material-icons-outlined cursor-pointer"
-                            @click="openResume($get(row, 'resume.resumeId', 0))"
+                            @click="openResume($get(row, 'resumeUrl', 0))"
                         >
                             picture_as_pdf
                         </span>

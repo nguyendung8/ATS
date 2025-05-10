@@ -41,6 +41,7 @@ class Stage extends Model
     {
         return $this->belongsToMany(Candidate::class, 'candidate_jobs')
             ->as('application')
-            ->withPivot('id', 'job_id', 'rejection_id');
+            ->withPivot('id', 'job_id', 'rejection_id')
+            ->wherePivot('is_active', true);
     }
 }

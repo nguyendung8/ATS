@@ -15,9 +15,11 @@ use App\Http\Controllers\CandidateController;
 use App\Http\Controllers\CriterionController;
 use App\Http\Controllers\EducationController;
 use App\Http\Controllers\ExperienceController;
+use App\Http\Controllers\GenAIController;
 use App\Http\Controllers\Interview\SubmitAssessmentForm;
 use App\Http\Controllers\InterviewController;
 use App\Http\Controllers\Job\CreateCandidateController;
+use App\Http\Controllers\Job\AdminCreateCandidateController;
 use App\Http\Controllers\Job\GetAllLocationController;
 use App\Http\Controllers\Job\GetAllPublishedJobController;
 use App\Http\Controllers\Job\GetPublishedJobController;
@@ -60,6 +62,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::post('/gen-ai/upload', [GenAIController::class, 'upload']);
+
 Route::post('/users/register', [UserController::class, 'register']);
 
 Route::prefix('interviews')->group(function () {
@@ -77,6 +81,8 @@ Route::prefix('jobs')->group(function () {
     Route::get('/locations', GetAllLocationController::class);
     Route::get('/tags', GetAllTagController::class);
     Route::post('/{job}/candidates', CreateCandidateController::class);
+    Route::post('/{job}/admin/candidates', AdminCreateCandidateController::class);
+    Route::delete('/{job}/candidates/{candidate}', [JobController::class, 'deleteCandidate']);
     Route::get('/{id}/applied', [JobController::class, 'getAppliedJobs']);
 });
 
@@ -90,6 +96,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::prefix('stages')->group(function () {
         Route::get('/{stage}/pipelines/{pipeline}/jobs/{jobId}/candidates', GetCandidatesByStageAndJobController::class);
+        Route::post('/{stage}/jobs/{job}/add-candidate', \App\Http\Controllers\Stage\AddCandidateToStageController::class);
     });
 
     Route::prefix('mail-templates')->group(function () {
@@ -112,7 +119,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::prefix('interviews')->group(function () {
         Route::post('{interview}/submit-assessment-form', SubmitAssessmentForm::class);
-//        Route::get('{interviewHashId}', [InterviewController::class, 'show']);
+        Route::put('{interview}/cancel', [InterviewController::class, 'cancelInterview']);
     });
 
     Route::prefix('permissions')->group(function () {

@@ -56,15 +56,7 @@
         },
 
         data(instance) {
-            const events = _map(this.interviews, (interview) => ({
-                id: this.$get(interview, 'id'),
-                start: this.$get(interview, 'startTime'),
-                end: this.$get(interview, 'endTime'),
-                title: this.$get(interview, 'name'),
-                backgroundColor: '#7367f0',
-                borderColor: '#7367f0',
-                classNames: ['pointer'],
-            }));
+            const events = this.mapInterviewsToEvents(this.interviews);
 
             return {
                 calendarOptions: {
@@ -101,16 +93,26 @@
 
         watch: {
             interviews(val) {
-                this.calendarOptions.events = _map(val, (interview) => ({
-                    id: this.$get(interview, 'id'),
-                    start: this.$get(interview, 'startTime'),
-                    end: this.$get(interview, 'endTime'),
-                    title: this.$get(interview, 'name'),
-                    backgroundColor: '#7367f0',
-                    borderColor: '#7367f0',
-                    classNames: ['pointer'],
-                }));
+                this.calendarOptions.events = this.mapInterviewsToEvents(val);
             },
+        },
+        
+        methods: {
+            mapInterviewsToEvents(interviews) {
+                return _map(interviews, (interview) => {
+                    const isCanceled = this.$get(interview, 'status') === 'canceled';
+                    
+                    return {
+                        id: this.$get(interview, 'id'),
+                        start: this.$get(interview, 'startTime'),
+                        end: this.$get(interview, 'endTime'),
+                        title: this.$get(interview, 'name'),
+                        backgroundColor: isCanceled ? '#9e9e9e' : '#7367f0',
+                        borderColor: isCanceled ? '#9e9e9e' : '#7367f0',
+                        classNames: ['pointer', isCanceled ? 'canceled-event' : ''],
+                    };
+                });
+            }
         },
     };
 </script>
@@ -137,5 +139,9 @@
     }
     .pointer {
         cursor: pointer;
+    }
+    .canceled-event {
+        text-decoration: line-through;
+        opacity: 0.7;
     }
 </style>

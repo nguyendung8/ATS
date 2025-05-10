@@ -11,7 +11,7 @@
             <el-dropdown class="flex items-center" trigger="click">
                 <span class="el-dropdown-link material-icons-outlined">more_vert</span>
                 <el-dropdown-menu slot="dropdown">
-                    <el-dropdown-item>{{ $t('add candidate') }}</el-dropdown-item>
+                    <el-dropdown-item @click.native="openCandidateModal">{{ $t('add candidate') }}</el-dropdown-item>
                     <el-dropdown-item
                         @click.native="openEditStageAction(stage)"
                     >
@@ -36,6 +36,8 @@
                     :candidate="candidate"
                     :open-interview-form="openInterviewForm"
                     :star-candidate="starCandidate"
+                    :job-id="jobId"
+                    @candidate-deleted="onCandidateDeleted"
                 />
             </div>
         </draggable>
@@ -47,6 +49,7 @@
             :assessment-forms="assessmentForms"
             :submit-form="createInterviewSchedule"
         />
+        <CandidateModal ref="candidateModal" :job-id="jobId" @candidate-added="refreshData" />
     </div>
 </template>
 
@@ -55,6 +58,7 @@
     import CreateInterviewForm from '~/components/Interview/CreateForm/index.vue';
     import CandidateCard from '../../Candidate/CandidateCard.vue';
     import mixin from './mixin';
+    import CandidateModal from '~/components/Pipeline/Modal/CanidateModal.vue';
 
     export default {
         name: 'StageKanban',
@@ -63,9 +67,31 @@
             draggable,
             CandidateCard,
             CreateInterviewForm,
+            CandidateModal,
         },
 
         mixins: [mixin],
+
+        methods: {
+            openCandidateModal() {
+                this.$refs.candidateModal.visible = true;
+            },
+            
+            refreshData() {
+                // Reset data và tải lại
+                this.candidates = [];
+                this.page = 1;
+                this.fetch();
+                this.page += 1;
+            },
+            
+            onCandidateDeleted(candidateId) {
+                // Xóa ứng viên khỏi danh sách hiện tại
+                this.candidates = this.candidates.filter(candidate => candidate.id !== candidateId);
+                // Cập nhật số lượng
+                this.total -= 1;
+            }
+        },
     };
 </script>
 

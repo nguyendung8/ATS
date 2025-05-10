@@ -175,6 +175,34 @@ class InterviewController extends Controller
         }
     }
 
+    /**
+     * Cancel an interview (mark as canceled instead of deleting it)
+     */
+    public function cancelInterview(Interview $interview)
+    {
+        $this->authorize('delete', $interview);
+
+        try {
+            DB::beginTransaction();
+
+            $interview->update([
+                'status' => InterviewStatus::CANCELED
+            ]);
+
+            DB::commit();
+
+            return InterviewResource::make($interview->load([
+                'candidateJob.job',
+                'candidateJob.candidate.user',
+                'interviewers.user',
+                'scheduler.user',
+            ]));
+        } catch (Exception $e) {
+            DB::rollback();
+            throw $e;
+        }
+    }
+
     public function destroy(Interview $interview)
     {
         $this->authorize('delete', $interview);

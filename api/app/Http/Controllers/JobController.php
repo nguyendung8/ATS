@@ -10,6 +10,7 @@ use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use function response;
+use App\Models\CandidateJob;
 
 class JobController extends Controller
 {
@@ -113,12 +114,49 @@ class JobController extends Controller
         return $job->delete();
     }
 
-    public function getAppliedJobs(int $candidateId)
+    public function getAppliedJobs(int $userId)
     {
-        $jobs = $this->jobRepository->getAppliedJobs($candidateId);
+        // Tìm candidate_id từ user_id
+        $candidate = \App\Models\User::find($userId)->candidate;
+        
+        if (!$candidate) {
+            return response()->json([
+                'data' => [],
+            ]);
+        }
+        
+        $data = CandidateJob::query()
+            ->where('candidate_id', $candidate->id)
+            ->where('is_active', true)
+            ->with(['job', 'stage'])
+            ->get();
 
         return response()->json([
-            'data' => $jobs,
+            'data' => $data->map(function ($item) {
+                return [
+                    'job-info' => $item?->job->getAttributes() ?? [],
+                    'stage' => $item?->stage?->name ?? '',
+                ];
+            }),
         ]);
+    }
+
+    public function deleteCandidate(Job $job, int $candidateId)
+    {
+        try {
+            DB::beginTransaction();
+
+            $job->candidateJobs()->where('candidate_id', $candidateId)->delete();
+
+            DB::commit();
+
+            return response()->json([
+                'message' => 'Candidate deleted successfully',
+            ]);
+        } catch (Exception $e) {
+            DB::rollback();
+
+            throw $e;
+        }
     }
 }

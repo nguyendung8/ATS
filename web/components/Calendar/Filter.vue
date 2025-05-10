@@ -4,7 +4,7 @@
             <h3 class="font-semibold capitalize mb-5">{{ $t("filtering options") }}</h3>
             <el-form>
                 <el-form-item>
-                    <el-checkbox-group v-model="statuses" @change="((val) => { onChangeValue('statuses', val) })">
+                    <el-checkbox-group v-model="statuses" @change="handleStatusChange">
                         <div>
                             <el-checkbox label="new">{{ $t('new events') }}</el-checkbox>
                         </div>
@@ -46,6 +46,11 @@
                         @input="((val) => { onChangeValue('interviewer', val) })"
                     />
                 </el-form-item>
+                <el-form-item v-if="statuses.length > 0 || candidate || jobName || interviewer">
+                    <el-button type="danger" plain class="w-full" @click="clearAllFilters">
+                        {{ $t('clear') }}
+                    </el-button>
+                </el-form-item>
             </el-form>
         </div>
         <el-image :src="require('~/assets/images/calendar.png')" alt="calendar" class="calendar-image" />
@@ -76,6 +81,14 @@
         },
 
         methods: {
+            handleStatusChange(value) {
+                if (value && value.length > 0) {
+                    this.query = { ...this.query, statuses: value };
+                } else {
+                    this.query = _omit(this.query, 'statuses');
+                }
+                this.searchInterviews(this.query);
+            },
             onChangeValue(key, value) {
                 this.query = value
                     ? { ...this.query, [key]: value }
@@ -83,6 +96,14 @@
 
                 this.searchInterviews(this.query);
             },
+            clearAllFilters() {
+                this.statuses = [];
+                this.candidate = null;
+                this.jobName = null;
+                this.interviewer = null;
+                this.query = {};
+                this.searchInterviews(this.query);
+            }
         },
     };
 </script>
@@ -90,5 +111,12 @@
 <style lang="scss" scoped>
     .calendar-image {
         width: 100%;
+    }
+    
+    .filter-container {
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 </style>

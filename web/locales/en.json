@@ -222,5 +222,7 @@
     "save": "Save",
     "last edit": "Last edit",
     "use this template": "Use this template",
-    "interviews scheduled": "Interview Schedule"
+    "interviews scheduled": "Interview Schedule",
+    "delete candidate successfully": "Candidate deleted successfully",
+    "add candidate successfully": "Candidate added successfully"
 }
